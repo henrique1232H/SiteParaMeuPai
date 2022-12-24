@@ -1,0 +1,227 @@
+:root {
+    --primary-color: #FFF;
+    --color-black: black;
+    --margin: 8rem;
+    --padding: 8rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+   
+}
+
+body {
+    font-size: 2.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+nav {
+    position: fixed;
+    min-width: 100%;
+    min-height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    border-bottom: 2px solid #eee;
+    box-shadow: 0px 2px 12px black;
+
+}
+
+.Logo {
+    margin-left: var(--margin);
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+}
+
+.Logo::after {
+    content: "";
+    position: absolute;
+    bottom: 0.01rem;
+    left: 50%;
+    height: 0.2rem;
+    background: var(--color-black);
+    transition: all 0.2s ease-in-out;
+    width: 0;
+}
+
+.Logo:hover::after {
+    left: 0%;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-black);
+
+}
+
+nav ul {
+    display: flex;
+    font-size: 2rem;
+}
+
+nav ul li {
+    margin-right: 3.2rem;
+    list-style: none;
+}
+
+.main {
+    padding: var(--padding);
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    background-image: url('../img/sunset.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--primary-color);
+}
+
+.glass {
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 10rem;
+}
+.glass p {
+    height: 30rem;
+    width: 30rem;
+}
+
+.white {
+    background: var(--primary-color);
+    color: var(--color-black);
+}
+
+
+.sobre .photo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sobre .photo div {
+    min-width: 200px;
+    min-height: 200px;
+    background: red;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.2s all ease-in-out;
+}
+
+.sobre .photo div:nth-child(1) {
+    background-image: url('../img/cat.jpg');
+   
+}
+
+.sobre .photo div:nth-child(2) {
+    background-image: url('../img/bear.jpg');
+   
+}
+
+.sobre .photo div:nth-child(3) {
+    background-image: url('../img/owl.jpg');
+   
+}
+
+.sobre .photo div:nth-child(4) {
+    background-image: url('../img/kittens.jpg');
+   
+}
+
+.sobre .photo div:nth-child(5) {
+    background-image: url('../img/sonic.jpg');
+   
+}
+
+.sobre .photo div:hover {
+    padding: 4rem;
+    margin: 3rem;
+    box-shadow: 1rem 1rem 1.2rem black;
+}
+
+.escolhas {
+    background-image: url('../img/Moon.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--primary-color);
+    height: 120vh;
+
+}
+
+.escolhas p {
+    margin-top: 3rem;
+}
+
+.grid-title {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid-title img {
+    margin-top: 1rem;
+    margin-left: 10rem;
+    height: 20rem;
+}
+
+.escolhas .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    height: 50vh;
+    max-width: 100%;
+    margin-top: 6rem;
+    
+    
+}
+
+.box {
+    padding: 1rem;
+    background: rgba(1, 1, 80, 0.9);
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem black;
+}
+
+.box h3 {
+    text-align: center;
+}
+
+.fotos {
+    height: 210vh;
+}
+
+.grid-fotos {
+    margin-top: 10rem;
+    height: 100rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.grid-fotos .foto {
+    background: red;
+}
+
